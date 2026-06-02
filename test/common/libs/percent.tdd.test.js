@@ -12,4 +12,9 @@ describe('percent — correção de divisão por zero (TDD)', () => {
   it('percent(5, 0) deve retornar 0 (em vez de Infinity)', () => {
     expect(percent(5, 0)).to.equal(0);
   });
+
+  // Ciclo 2
+  it('percent(0, 0) deve retornar 0 (em vez de NaN)', () => {
+    expect(percent(0, 0)).to.equal(0);
+  });
 });
