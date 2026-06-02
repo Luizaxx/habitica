@@ -1,6 +1,10 @@
 // TODO move to client
 
 export default function percent (x, y, dir) {
+  if (x > 0 && y === 0) {
+    return 0;
+  }
+
   let roundFn;
   switch (dir) {
     case 'up':
